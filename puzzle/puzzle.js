@@ -14,7 +14,7 @@ const dragged = {
 
 let isPlaying = false;
 let timeInterval = null;
-let tiem = 0;
+let time = 0;
 
 setGame();
 
@@ -48,8 +48,8 @@ function setGame() {
     container.innerHTML = "";
     shuffle(tiles).forEach(tile => container.appendChild(tile))
     timeInterval = setInterval(() => {
-      playTime.innerText = tiem;
-      tiem++;
+      playTime.innerText = time;
+      time++;
     }, 1000) 
   }, 5000)
 }
